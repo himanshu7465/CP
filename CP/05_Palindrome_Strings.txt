@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	string s;
+	cin>>s;
+int i=0, flag=0;
+int last= s.length()-1;
+while(s[i]==s[last]){
+	i++;
+	last--;
+	if(i==last){
+		cout<<"YES"<<endl;
+		flag=1;
+	}
+	if(i==last-1){
+		cout<<"YES"<<endl;
+		flag=1;
+	}
+}
+if(flag==0)
+	cout<<"NO"<<endl;
+}
+
+
+
+
+
+
+
+
+	// for(int i=0; i<=s.size(); i++){
+	// 	int last=s[s.length()-1]
+	// 	if(s[i]==s[last]);
+	// 	last--;
+	// 	else{
+	// 		return;
+	// 	}
+	// }
